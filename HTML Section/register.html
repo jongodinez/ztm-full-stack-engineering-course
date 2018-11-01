@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <h1>Registration</h1>
+</head>
+<body>
+    <form>
+        First Name: <input type="text" name="firstname"> <br>
+        Last Name: <input type="text" name="lastname"> <br>
+        Email: <input type="email" name="email" required> <br>
+        Password: <input type="password" name ="password" minlength="6"> <br>
+        Birthday: <input type="date" name= "birthday"><br>
+        Gender: <br>
+
+        <!-- Gender radio buttons -->
+        <input type="radio" name=gender>Male<br>
+        <input type="radio" name=gender>Female<br>
+        <input type="radio" name=gender>Other<br>
+
+        <!--Check boxes-->
+        Pets: <br>
+        <input type="checkbox" name="dogs">Dogs<br>
+        <input type="checkbox" name="cats">Cats<br>
+        <input type="checkbox" name="fish">Fish<br>
+
+        <!--Dropdown menu-->
+        Cars: <br>
+        <!-- This creates a dropdown list -->
+        <select> 
+            <option value="Volvo" name="volvo">Volvo</option>
+            <option value="Honda" name="honda">Honda</option>
+            <option value="Toyota" name="toyota">Toyota</option>
+        </select> <br>
+
+        <!-- Register and Reset buttons -->
+        <input type="submit" value= "Register!">
+        <input type= "reset">
+    </form>
+    
+</body>
+</html>

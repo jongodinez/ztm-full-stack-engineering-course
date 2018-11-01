@@ -1,0 +1,9 @@
+p {
+    font-size: 20px;
+}
+
+span {
+    font-size: 2em;
+    font-style: italic;
+    list-style-type: square;
+}

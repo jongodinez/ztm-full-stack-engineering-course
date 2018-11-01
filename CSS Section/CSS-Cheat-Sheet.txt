@@ -1,0 +1,39 @@
+CSS Cheat Sheet
+
+Reference:
+*https://www.w3schools.com/cssref/css_selectors.asp
+*https://css-tricks.com/almanac/
+*https://unsplash.com/
+*http://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF
+*https://specificity.keegan.st/
+*https://darekkay.com/dev/flexbox-cheatsheet.html
+
+Bootstrap Templates
+*https://cruip.com/
+*https://mdbootstrap.com/freebies/
+*http://www.mashup-template.com/templates.html
+*https://www.creative-tim.com/bootstrap-themes/ui-kit?direction=asc&sort=price
+*https://startbootstrap.com/template-categories/all/
+*https://daneden.github.io/animate.css/
+
+Cascading Style Sheets at the most basic level it indicates that the order of CSS rules matter. 
+
+
+.class == hook. Groups elements together so you can style them at the same time.
+#id == hook, but with special browser function. Groups elements together so you can style them at the same time.
+* == normally used at the top and symbolizes all elements. 
+element
+element, element == group two elements to have the same stylization.
+element element == meaning you want to select all of the second elements that are inside the first element. Useful for formatting elements within other elements (e.g. all paragraphs under a heading)
+element > element == only effects the second element who are "children" to the first element. (Mr. & Mrs. Div)
+element + element == adds effect only to the element directly after the first.
+:hover == effects only occur if the element is hovered over.
+:last-child == effects only affect the last child. Use with .classes.
+:first-child == effects only effect the first child. Use with .classes.
+!important (not recommended) == breaks rule of cascading style sheets. Overrides other effects.
+
+
+What seletors win out in the cascade depends on:
+-Specificity == how detailed the selector is takes precedence.
+-Importance
+-Source Order
