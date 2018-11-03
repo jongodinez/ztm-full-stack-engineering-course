@@ -1,3 +1,5 @@
+//github resource to explore objects: https://sdras.github.io/object-explorer/
+
 //Three important things in objects: reference type, context, instantiation
 
 
