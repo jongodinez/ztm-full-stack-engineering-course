@@ -7,7 +7,7 @@ const array = [1, 2, 10, 16];
 
 const double = []
 const newArray = array.forEach((num) => {
-    double.push(num *2);
+    double.push(num *2); //pushes numbers into the array 'double'
 })
 console.log('forEach', double); // returns [2, 4, 20, 32]
 
