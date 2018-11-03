@@ -29,22 +29,49 @@ const array = [
 
 //Create an array using forEach that has all the usernames with a "!" to each of the usernames
 
+let array1 = [];
+array.forEach(user => {
+  let { username } = user;
+  username = username + '!';
+  array1.push(username);
+});
+
+console.log(array1);
 
 //Create an array using map that has all the usernames with a "? to each of the usernames
 
+const userQuestion = array.map(user => {
+  let { username } = user; 
+  return username + '?';
+}); 
+
+console.log(userQuestion);
 
 //Filter the array to only include users who are on team: red
+
+const sportsTeams = array.filter(user => {
+  return user.team === 'red';
+});
+
+console.log(sportsTeams);
 
 
 //Find out the total score of all users using reduce
 
-// (1), what is the value of i?
-// (2), Make this map function pure:
-const arrayNum = [1, 2, 4, 5, 8, 9];
-const newArray = arrayNum.map((num, i) => {
-	console.log(num, i);
-	alert(num);
-	return num * 2;
-})
+const totalScore = array.reduce((accumulator, user) => {
+  return accumulator + user.score;
+}, 0);
 
-//BONUS: create a new list with all user information, but add "!" to the end of each items they own.
+console.log(totalScore);
+
+// (1), what is the value of i? 
+
+//i is the value of whatever you index it to. The index of the array.
+
+// (2), Make this map function pure:
+
+const arrayNum = [1, 2, 4, 5, 8, 9];
+const newArray = arrayNum.map((num, i) => num * 2);
+console.log(newArray);
+
+
