@@ -2,7 +2,7 @@
 
 //.includes()
 
-.includes()//added for strings and arrays.
+//.includes()//added for strings and arrays.
 
 'Hello'.includes('o'); //true
 
