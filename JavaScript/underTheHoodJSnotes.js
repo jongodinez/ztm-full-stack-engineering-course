@@ -12,7 +12,7 @@ const b = 10
 const c = 100
         //memory leak: all memory is limited. Leaks happen when there is unused memory laid around. ex) what if var 'a' was never used again and is sitting around using memory.
 
-    //call stack: reads and executes script
+    //call stack: reads and executes script: first in, last out
         //literally creates a stack of read js commands to execute
 
 console.log('1');
@@ -36,3 +36,18 @@ one()//remove after two()
 
 //Javascript is a single threaded* language that can be non-blocking**
     //*single threaded means there is only one call stack and it is 'first in, last out' meaning it can only do one thing at a time.
+    //**asynch executes lines of code non synchronously
+    console.log('1');
+    setTimeout(()=> {
+        console.log('2');
+    }, 2000)// 2 secs = 2000
+    console.log('3'); //prints 1,3,2
+
+//Synchronous programming: lines of code get executed line by line
+    //ex of stack overflow (recursion)
+        function foo() {
+            foo()
+        }
+        foo();
+        //recursiom: a function that runs itself over and over
+
