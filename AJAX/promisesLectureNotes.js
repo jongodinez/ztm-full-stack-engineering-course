@@ -68,3 +68,8 @@ async function playerStart() {
     await movePlayer(10, 'Right')
     await movePlayer(330, 'Left')
 }
+
+fetch('https://jsonplaceholder.typicode.com/users')
+    .then(resp=> resp.json())
+    .then(console.log)
+
