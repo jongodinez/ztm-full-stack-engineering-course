@@ -36,21 +36,3 @@ Promise.all(urls.map(url => {
     console.log(results[1])
     console.log(results[2])
 }).catch(() => console.log('error'))
-
-// #1) Create a promise that resolves in 4 seconds and returns "success" string
-const successPromise = new Promise((resolve, reject) => {
-    setTimeout(resolve,4000, "success")
-})
-
-Promise.all([successPromise])
-    .then(values => {
-    console.log(values);
-})
-
-// #2) Run the above promise and make it console.log "success"
-const successPromise = new Promise((resolve, reject) => {
-    setTimeout(resolve,4000, "success")
-})
-
-Promise.all([successPromise])
-    .then(console.log('success'));
